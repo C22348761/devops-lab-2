@@ -1,5 +1,4 @@
-user_input = input("Enter numbers separated by space: ")s
-numbers = [int(num) for num in user_input.split()]
-average = sum(numbers) / len(numbers)
-print("Average:", average)
-
+nums = list(map(int, input("Enter numbers separated by spaces: ").split()))
+print("Average:", sum(nums) / len(nums))
+print("Smallest:", min(nums))
+print("Largest:", max(nums))
